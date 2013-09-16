@@ -56,12 +56,20 @@
 .button-main.button-medium2, .button-main.button-medium2:hover {
 	width: 195px;
 	text-decoration: none!important;
-	height: 30px;
+	height: 46px;
 	line-height: 1.2em;
 	margin-top: 10px;
 	margin-right: 10px;
 	padding: 14px 25px;
 	text-decoration: none!important;
+}
+
+.button-main.button-medium2 span{
+	font-size: 11px;
+}
+.button-main.button-medium2.padding-fix{
+	height: 30px;
+	padding: 22px 25px;
 }
 
 .button-main.button-mini {
