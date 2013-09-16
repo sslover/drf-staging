@@ -1,0 +1,67 @@
+<!-- Start Section Title -->
+<section id="title-page">
+    <a href="/about#advisors">
+    	<h2>DRF Advisors</h2>
+        <span class="arrow"></span>
+    </a>
+</section>
+<!-- End Section Ttile -->
+
+<div id="content">
+    <!-- Start Section Single Team People -->
+    <section id="single-team" class="container">
+        <div class="row">
+            <div class="span4">
+                <div class="team-img">
+                    <img src="../img/people/{{member.photo}}" alt="{{member.name}}">
+                </div>
+            </div>
+            
+            <div class="span8">
+                <div class="team-name">
+                    <h2>{{member.name}}</h2>
+                    <h3>{{member.company}}
+                        {{#member.school}}  
+                        (Alma Mater - {{member.school}})
+                        {{/member.school}}</h3>
+                </div>
+                <div class="team-description">
+                    <p>{{member.bio}}</p>
+                </div>
+                <div class="team-social">
+                 <!-- show all the Web presence of this member -->                   
+                    <ul>
+                        {{#member.email}}
+                        <li><a href="mailto:{{member.email}}"><i class="font-icon-social-email"></i></a></li>
+                        {{/member.email}}
+
+                        {{#member.webURL}}
+                        <li><a href="{{member.webURL}}"><i class="font-icon-social-500px"></i></a></li>
+                        {{/member.webURL}}
+                        
+                        {{#member.twitterURL}}
+                        <li><a href="{{member.twitterURL}}"><i class="font-icon-social-twitter"></i></a></li>
+                        {{/member.twitterURL}}
+                        
+                        {{#member.linkedInURL}}
+                        <li><a href="{{member.linkedInURL}}"><i class="font-icon-social-linkedin"></i></a></li>
+                        {{/member.linkedInURL}}
+
+                        {{#member.githubURL}}
+                        <li><a href="{{member.githubURL}}"><i class="font-icon-social-github"></i></a></li>
+                        {{/member.githubURL}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="span12">
+            	<div class="paginate-team">
+                	<a href="/about#advisors" class="button-main">Back to Advisors</a>
+               	</div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Single Team People -->
+</div>

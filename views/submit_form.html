@@ -1,0 +1,215 @@
+<!-- Start Section Title -->
+<section id="title-page" class="margin-40">
+  <h2>Tell Us About Your Startup</h2>
+  <span class="arrow"></span>
+</section>
+<!-- End Section Ttile -->
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <!-- Title Page -->
+    <div class="row margin-20">
+      <div class="span12">
+        <p>We'd love to hear more about what you're working on. Tell us about your company for possible Dorm Room Fund funding and partnership.</p>
+      </div>
+    </div>
+    <!-- End Title Page -->
+  
+      <div id="response">
+      <!-- Contact Form -->
+      <div class="row margin-50">
+          <div class="span9">
+
+              <form method="POST" id="contact-form" class="contact-form" action="/apply">
+                      <h4>Dorm Room Fund City of Application</h4>
+
+                    <!-- Start DropDown -->
+                       <div class="dropdown margin-30">
+                            <div class="dropmenu">
+                                <p class="selected"
+                                style="margin-top:0px!important;">Choose a
+                                DRF City*</p>
+                                <i class="font-icon-arrow-simple-down"></i>
+                            </div>
+
+                            <div class="dropmenu-active" name="city">
+                                <ul>
+                                    <li><a href="#" id="newyork">DRF
+                                    New York</a></li>
+                                    <li><a href="#" id="bayarea">DRF
+                                    Bay Area</a></li>
+                                    <li><a href="#" id="philly">DRF
+                                    Philly</a></li>
+                                    <li><a href="#" id="boston">DRF
+                                    Boston</a></li>
+                                    <li><a href="#" id="other">Other Location</a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- End DropDown -->
+
+                  <select id="city" name="city" style="display:none" class="required" required>
+                      <option value="newyork">DRF New York</option>
+                      <option value="bayarea">DRF Bay Area</option>
+                      <option value="philly">DRF Philly</option>
+                      <option value="boston">DRF Boston</option>
+                      <option value="other">Other Location</option>
+                  </select>
+
+                  <h4>Founders</h4> 
+                  <p class="contact-name">
+                      <label>Your Name</label>
+                      <input id="contact_name" type="text" placeholder="Your Name*"
+                      name="name" class="required"
+                      value="{{submission.name}}" required />
+                  </p>
+                  <p class="contact-email">
+                      <label>Email Address</label>
+                      <input id="contact_email" placeholder="Email Address*"
+                      name="email" type="email" class="required"
+                      value="{{submission.email}}" required  />
+                  </p>
+                  <p class="phone-number">
+                      <label>Phone Number</label>
+                      <input id="phone" type="text" placeholder="Phone Number"
+                      value="{{submission.phone}}" type="digits" name="phone" />
+                  </p>
+                  <p class="title">
+                      <label>Your Title</label>
+                      <input id="title" type="text" placeholder="Title*"
+                      value="{{submission.title}}" name="title" class="required"
+                      required/>
+                      </p>
+                  <p class="school">
+                      <label>Your School</label>
+                      <input id="school" type="text" placeholder="School*"
+                      value="{{submission.school}}" name="school"
+                      class="required" required/>
+                      </p>
+                  <p class="presence">
+                      <label>Your Web Presence</label>
+                      <input id="presence" type="text" placeholder="Your Web presence (Website, LinkedIn, etc.)"
+                      value="{{submission.presence}}" name="presence" />
+                  </p>
+                  <p class="cofounders">
+                      <label>Add Co-Founders</label>
+                      <textarea id="cofounders" type="text" placeholder="Add Co-Founders (Names, Roles, Web Presence)"
+                      value="{{submission.cofounders}}" name="cofounders" rows="7" cols="40" ></textarea>
+                  </p>
+
+                  <h4>Company</h4>
+
+                  <p class="companyname">
+                      <label>Company Name</label>
+                      <input id="companyname" type="text" placeholder="Company Name*"
+                      value="{{submission.companyname}}"
+                      name="companyname" class="required" required />
+                  </p>
+                  <p class="url">
+                      <label>Company URL / Website</label>
+                      <input id="url" placeholder="Company URL / Website"
+                      value="{{submission.url}}" name="url" type="text"
+                      />
+                  </p>
+                  <p class="description">
+                      <label>Company Description</label>
+                      <textarea id="description" placeholder="What does your company do? Briefly describe your business*"
+                      value="{{submission.description}}" name="description"
+                      rows="7" cols="40" class="required" required></textarea>
+                  </p>
+                  <p class="founderstory">
+                      <label>Founder Roles and Story</label>
+                      <textarea id="founderstory" placeholder="Please tell us about each founder and their role. How did you meet and how long have you been working together?*"
+                      value="{{submission.founderstory}}" name="founderstory"
+                      rows="7" cols="40" class="required" required></textarea>
+                  </p>
+                  <p class="bizmodel">
+                      <label>Business Model</label>
+                      <textarea id="bizmodel" placeholder="How will your company make money?*"
+                      value="{{submission.bizmodel}}"
+                      name="bizmodel" rows="7" cols="40" class="required"
+                      required></textarea>
+                  </p>
+                  <p class="competitors">
+                      <label>Competitors</label>
+                      <textarea id="competitors" placeholder="Who are your competitors and how are you different from them? Please include URLs*"
+                      value="{{submission.competitors}}"
+                      name="competitors" rows="7" cols="40" class="required"
+                      required></textarea>
+                  </p>
+                  <p class="fundraising">
+                      <label>Fundraising Plans</label> 
+                      <textarea id="fundraising" placeholder="How much money are you looking to raise? Please include fundraising plans for the future*"
+                      value="{{submission.fundraising}}"
+                      name="fundraising" rows="7" cols="40" class="required"
+                      required></textarea>
+                  </p>
+                  <p class="useoffunds">
+                      <label>Use of Funding</label>
+                      <textarea id="useoffunds" placeholder="How do you plan to use Dorm Room Fund funding?*"
+                      value="{{submission.useoffunds}}" name="useoffunds"
+                      rows="7" cols="40" class="required" required></textarea>
+                  </p>
+                  <p class="traction">
+                      <label>Traction and Progress</label>
+                      <textarea id="traction" placeholder="Please describe traction to date such as customers, user metrics, revenue or any other indications of progress*"
+                      value="{{submission.traction}}" name="traction" rows="7"
+                      cols="40" class="required" required></textarea>
+                  </p>
+                  <h4>Upload Pitch</h4> 
+                  <p class="form-text">A pitch is your chance to show us why we should invest in you. You can choose from two different options:
+                    <ol>
+                      <li>Upload a pitch deck</li>
+                      <li>Provide a link</li> 
+                    </ol>
+                    You can <a href="../img/guidelines.pdf" target="_blank">read our outline</a> of what to include in a pitch for guidance. You may also want to <a href="http://www.pitchenvy.com/" target="_blank">browse well-known startups' pitch decks</a> to get a sense of what they look like. Above all, what should we know in order to make our decision? 
+                  </p>
+                  <input type="button" class="submit btn pitchbtn" value="Upload Pitch" onClick="filepicker_pick()">
+                  
+                  <div id="uploadsuccess" style="display:none">
+                    <i class="font-icon-ok-circle"></i><p class="success">Uploaded Successfully</p>
+                  </div>
+
+                  <div id="uploadfailed" style="display:none">
+                    <i class="font-icon-remove-circle"></i><p class="failure">Upload Unsuccessful</p>
+                  </div>
+                  <div style="clear:both"></div>
+
+                  <p class="pitch">
+                  <input id="pitch" type="text" placeholder="Enter Pitch Link"
+                      value="{{submission.pitch}}" name="pitchURL" type="url"
+                      class="required" required/>
+                  </p>
+                  
+                  <hr></hr>
+
+                  <input type="submit" class="submit btn" value="Submit Application">
+
+                  <div id="response">
+
+                  </div>
+              </form>
+
+          </div>
+
+          <!-- Contact Details -->
+          <div class="span3">
+              <div class="contact-details">
+                  <h4>Have a Question?</h4>
+                  <ul>
+                      <li><a href="mailto:info@dormroomfund.com">info@dormroomfund.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <!-- End Contact Details -->
+
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+  <!-- End Contact Form -->
+</div>
+</section>
+<!-- End Contact Section -->

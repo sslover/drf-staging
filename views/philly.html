@@ -1,0 +1,163 @@
+<!-- Start Slider -->
+<section id="slider">
+    <div class="fullwidthbanner-container">
+        <div class="fullwidthbanner">
+            <ul style="visibility:hidden;">
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+                    <img src="/img/slider-images/philly.jpg" alt="Dorm Room Fund Philly" data-fullwidthcentering="on">
+                    
+                    <div class="caption heading sfb"
+                         data-x="center"
+                         data-y="235"
+                         data-speed="300"
+                         data-start="500" >Dorm Room Fund Philly</div>
+
+                    <a class="caption innerlink bindit sfb"
+                         href="#about"
+                         data-x="center" data-hoffset="-255"
+                         data-y="304"
+                         data-speed="300"
+                         data-start="800" >About DRF Philly</a>
+
+                    <a class="caption innerlink bindit spacingfix sfb"
+                         href="#submit"
+                         data-x="center"
+                         data-y="304"
+                         data-speed="300"
+                         data-start="900" >Submit Your Business</a>
+
+                    <a class="caption innerlink bindit spacingfix2 sfb"
+                         href="#team"
+                         data-x="center" data-hoffset="250"
+                         data-y="304"
+                         data-speed="300"
+                         data-start="1000" >Meet the Team</a>  
+                         
+                </li>
+                          
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Slider -->
+
+<!-- Start Intro Box -->
+<section id="intro-box" class="margin-40">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h3>A venture fund for students, by students in greater Philadelphia</h3>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Intro Box -->
+
+<section id="elements" class="container">
+    <!-- Information Block -->
+    <div class="row">
+        <div class="span12">
+            <div id="about" class="anchor"></div>
+            <div class="page-title">
+                <h3>About DRF Philly</h3>
+            </div>    
+            <p>Dorm Room Fund is a student-run venture firm that invests in student-run companies. Our team is all students and our mission is to inspire and support more careers in the startup industry. We believe that a relatively small amount of capital can help student founders take their ideas from the dorm room to the market.</p>
+            <p>The Dorm Room Fund aims to be the first choice for student entrepreneurs in the greater Philadelphia region who need capital to start their amazing businesses.</p>
+            <div id="submit" class="anchor"></div>
+            <h3>Have a Startup?</h3>
+            <p class="margin-40">We'd love to hear more about what you're working on. Tell us about your company for possible Dorm Room Fund funding and partnership.</p>
+            <div class="button-holder">
+                <a class="button-main button-large" href="/apply">Tell Us About Your Startup</a>
+            </div>
+        </div>  
+    </div>
+</section>
+
+<!-- Start Section Title -->
+<section id="heading-page">
+    <div id="team" class="anchor"></div>
+    <h2>Philly Investment Team</h2>
+    <span class="arrow"></span>
+</section>
+<!-- End Section Ttile -->
+
+
+<div id="content">
+
+    <!-- Start Section Team People -->
+    <section id="team" class="container">
+        <!-- Start Team -->
+        <div class="row">
+            <div class="span12">
+                <div id="team-people" class="row">
+                
+                    <ul id="people">
+
+                        <!-- loop through and show all team members -->
+                        {{#members}}
+
+                        <li class="single-people span3">
+                            <a class="team-hover" href="/people/{{slug}}">
+                                <div class="team-img">
+                                    <img src="../img/people/{{photo}}" alt="{{name}}">
+                                    <div class="overlay"></div>
+                                    <i class="people-overlay">DRF Philly</i>
+                                </div>
+                                
+                                <div class="team-name">
+                                    <h3>{{name}}</h3>
+                                    <h4>{{school}}</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        {{/members}}
+                               
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Team -->
+
+    <!-- Start Alumni -->
+        <div class="row">
+            <div class="span12">
+                <div class="page-title">
+                    <h3 style="text-transform:none;">Alumni</h3>
+                </div>
+                <div id="team-people" class="row">
+                
+                    <ul id="people">
+
+                        <!-- loop through and show all team alumni -->
+                        {{#alumni}}
+
+                        <li class="single-people span3">
+                            <a class="team-hover" href="/people/{{slug}}">
+                                <div class="team-img">
+                                    <img src="../img/people/{{photo}}" alt="{{name}}">
+                                    <div class="overlay"></div>
+                                    <i class="people-overlay">DRF Philly</i>
+                                </div>
+                                
+                                <div class="team-name">
+                                    <h3>{{name}}</h3>
+                                    <h4>{{school}}</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        {{/alumni}}
+                               
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- End Alumni -->
+
+    </section>
+    <!-- End Section Team People -->
+</div>

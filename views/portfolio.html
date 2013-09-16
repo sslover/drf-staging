@@ -1,0 +1,61 @@
+<!-- Start Section Title -->
+<section id="title-page">
+	<h2>Dorm Room Fund Companies</h2>
+    <span class="arrow"></span>
+</section>
+<!-- End Section Ttile -->
+
+
+<div id="content">
+    <!-- Start Section Portfolio Filter -->
+    <section id="portfolio-filter" class="container margin-50">
+        <div class="row">
+            <div class="span12">
+            
+                <div class="dropdown">
+                    <div class="dropmenu">
+                        <p class="selected">All Cities</p>
+                        <i class="font-icon-arrow-simple-down"></i>
+                    </div>
+                    
+                    <div class="dropmenu-active">
+                        <ul class="option-set" data-option-key="filter">
+                            <li><a class="selected drop-selected" href="#filter" data-option-value="*">All Cities</a></li>
+                            <li><a href="#filter" data-option-value=".newyork">New York</a></li>
+                            <li><a href="#filter" data-option-value=".bayarea">Bay Area</a></li>
+                            <li><a href="#filter" data-option-value=".philly">Philly</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Section Portfolio Filter -->
+    
+    <!-- Start Section Portfolio Projects -->
+    <section id="portfolio" class="container">
+        <div class="row">
+        
+            <div id="portfolio-projects">
+                <ul id="projects">
+                    {{#companies}}                
+                        <li class="item-project span3 {{tag}}">
+                            <h5>
+                                <a href="{{webURL}}" target="_blank">{{name}}</a>
+                                <span class="arrow-port"></span>
+                            </h5>
+                            
+                            <a class="hover-wrap fancybox" href="{{webURL}}" title="{{name}}" target="_blank">
+                                <img src="img/portfolio/{{photo}}" alt="{{name}}" />
+                                <div class="overlay"></div>
+                                <i>DRF {{cityText}}</i>
+                            </a>
+                        </li>
+                    {{/companies}}  
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Portfolio Projects -->
+</div>

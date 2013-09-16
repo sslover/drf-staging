@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{pageTitle}}</title>
+<meta name="description" content="{{pageDescription}}" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Revolution Slider -->
+<link href="../rs-plugin/css/settings.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="../css/main.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="../css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="../css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="../css/responsive.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="/img/favicon.png">
+
+<!-- Modernizr -->
+<script src="../js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Replace Your Analytics Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="span2">
+                <div id="logo">
+                    <a href="/" title="Dorm Room Fund"></a>
+                </div>
+            </div>
+            
+            <div class="span10">
+                <!-- Mobile Menu -->
+                <a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="menu-icon"></span></a>
+                
+                <!-- Standard Menu -->
+                <nav id="menu">
+                    <ul id="menu-nav">
+                        <li><a href="/about">About</a>
+                            <ul class="sub-menu arrow-up">
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/about#advisors">Advisors</a></li>
+                                <li><a href="/about#press">Press</a></li>
+                                <li><a href="/about#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/newyork">Cities</a>
+                            <ul class="sub-menu arrow-up">
+                                <li><a href="/newyork">New York</a></li>
+                                <li><a href="/bayarea">Bay Area</a></li>
+                                <li><a href="/philly">Philly</a></li>
+                                <li><a href="/boston">Boston</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/portfolio">Companies</a>
+                        </li>
+                        <li><a href="/apply">Tell Us About Your Startup</a></li>
+                        <li><a href="http://blog.dormroomfund.com">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header -->
+
+            {{{yield}}}
+
+<!-- Start Twitter Feed -->
+<!-- Commenting out waiting for new Twitter OAuth approach
+<section id="twitter-feed">
+<span class="arrow-down"></span>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="twitter-list" data-count="1"></div>
+            </div>
+        </div>
+    </div>  
+</section> -->
+<!-- End Twitter Feed -->
+
+<!-- Start Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <nav id="social-footer">
+                <ul>
+                    <li><a href="https://twitter.com/dormroomfund" title=""><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/DormRoomFund" title=""><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="http://pinterest.com/dormroomfund" title=""><i class="font-icon-social-pinterest"></i></a></li>
+                    <li><a href="mailto:info@dormroomfund.com" title=""><i class="font-icon-social-email"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Start Credits -->
+<section id="footer-credits">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <p class="credits">&copy; 2013 Dorm Room Fund. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Credits -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+    <i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="../js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="../rs-plugin/js/jquery.themepunch.revolution.min.js"></script> <!-- Revolution Slider -->
+<script src="../js/jquery.superfish.min.js"></script> <!-- Superfish -->
+<script src="../js/jquery.supersubs.min.js"></script> <!-- Supersubs -->
+<script src="../js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="../js/plugins.js"></script> <!-- Contains: jQuery Easing, jQuery ScrollTo -->
+<script src="../js/main.js"></script> <!-- Default JS -->
+
+
+{{#formjs}}
+<!-- call the below on submission pages only -->
+<script src="/js/jquery.validate.min.js"></script>
+
+<script>
+    // when the page is loaded...
+    jQuery(document).ready( function() {
+        jQuery('form').validate(); // turn on validation for all forms
+    });
+</script>
+
+<script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
+
+<script>
+
+  /* ==================================================
+  Filepicker
+  ================================================== */
+
+
+    filepicker_pick = function() {
+    filepicker.setKey('APcHLlccTRIOSPO2BEdKVz');
+    filepicker.pick({
+      container: 'window',
+      services:['COMPUTER', 'DROPBOX'],
+    },
+      function(InkBlob){
+        jQuery('#pitch').val(InkBlob.url);
+        jQuery('#uploadsuccess').show();
+        jQuery('.pitch').hide();
+        jQuery('#uploadfailed').hide();
+      },
+      function(FPError){
+        console.log(FPError.toString());
+        jQuery('#uploadfailed').show();
+      }
+    );
+  }
+
+  /* ==================================================
+  City Dropdown
+  ================================================== */
+
+    jQuery("#newyork").click(function () {
+      jQuery("#city").val('newyork');
+     });
+
+    jQuery("#bayarea").click(function () {
+      jQuery("#city").val('bayarea');
+     });
+
+    jQuery("#philly").click(function () {
+      jQuery("#city").val('philly');
+     });
+
+    jQuery("#boston").click(function () {
+      jQuery("#city").val('boston');
+     });
+
+    jQuery("#other").click(function () {
+      jQuery("#city").val('other');
+     });
+
+</script>
+{{/formjs}}
+
+<!-- End Js -->
+
+</body>
+</html>
