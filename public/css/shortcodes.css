@@ -56,25 +56,30 @@
 .button-main.button-medium2, .button-main.button-medium2:hover {
 	width: 195px;
 	text-decoration: none!important;
-	height: 46px;
+	height: 30px;
 	line-height: 1.2em;
-	margin-top: 10px;
+	margin-top: 25px;
 	margin-right: 10px;
 	padding: 14px 25px;
 	text-decoration: none!important;
 }
 
 .button-main.button-medium2 span{
-	font-size: 11px;
-}
-.button-main.button-medium2.padding-fix{
-	height: 30px;
-	padding: 22px 25px;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 18px;
+	display: block;
+	width: 204px;
+	text-shadow: 0px 0px 5px #000;
 }
 
 .button-main.button-mini {
   	padding: 4px 12px;
   	font-size: 12px;
+}
+
+.button-main.button-medium2.margin-top-fix{
+	margin-top: 25px!important;
 }
 
 .button-main.button-block {
